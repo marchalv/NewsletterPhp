@@ -28,15 +28,26 @@ $themes_count = $result->fetch_row()[0];
 <html>
 <head>
     <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <h1>Dashboard</h1>
 
-<p>Number of registered users: <?php echo $users_count; ?></p>
-<p>Number of themes: <?php echo $themes_count; ?></p>
 
-<a href="logout.php">Logout</a>
+
+<div class="container">
+    <p>Number of registered <a href="inscription.php">users</a>: <?php echo $users_count; ?></p>
+    <p>Number of <a href="themes.php">themes</a>: <?php echo $themes_count; ?></p>
+</div>
+
+<br>
+
+<form class="button" action="logout.php">
+    <button type="submit">Log out</button>
+</form>
+
+
 
 </body>
 </html>
