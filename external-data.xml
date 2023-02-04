@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <object-set>
+    <dv.virtualview path="password">
+      <column name="virtual_column_name" expr=""/>
+    </dv.virtualview>
+    <dv.virtualview path="login">
+      <column name="virtual_column_name" expr=""/>
+    </dv.virtualview>
+  </object-set>
+</data>
