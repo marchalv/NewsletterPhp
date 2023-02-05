@@ -5,7 +5,7 @@ session_start();
 session_destroy();
 
 // Redirecting the user to the home page
-header("Location: home.php");
+header("Location: index.php");
 exit();
 
 ?>

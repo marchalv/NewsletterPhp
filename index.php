@@ -2,17 +2,17 @@
 
 <head>
     <title>Page d'accueil</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="src/style.css">
 </head>
 <body>
 <h1>Bienvenue sur notre site</h1>
-<form action="register.php" method="post">
+<form action="src/register.php" method="post">
     <label for="email">Adresse email :</label>
     <input type="email" id="email" name="email"><br><br>
     <input type="submit" value="S'inscrire">
 </form>
 <br><br>
-<form action="login.php" method="post">
+<form action="src/login.php" method="post">
     <label for="username">Nom d'utilisateur admin :</label>
     <input type="text" id="username" name="username"><br><br>
     <label for="password">Mot de passe admin :</label>
