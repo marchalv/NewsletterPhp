@@ -22,6 +22,12 @@ h1 {
     font-weight: bold;
 }
 
+.container-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 form {
     margin: 0 auto;
     width: 50%;
@@ -73,6 +79,9 @@ td > a {
 th {
     background-color: #f2f2f2;
 }
+.edit{
+    color: #2567e2;
+}
 button {
     padding: 10px 20px;
     background-color: #f44336;
@@ -86,4 +95,7 @@ button {
 .button {
     display: flex;
     justify-content: center;
+  }
+.admin {
+    background-color: #4CAF50;
   }

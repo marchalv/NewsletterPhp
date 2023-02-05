@@ -29,12 +29,14 @@ $result = $conn->query($sql);
     echo "<th>ID</th>";
     echo "<th>Label</th>";
     echo "<th></th>";
+    echo "<th></th>";
     echo "</tr>";
     while ($row = $result->fetch_assoc()) {
         echo "<tr>";
         echo "<td>" . $row["id"] . "</td>";
         echo "<td>" . $row["label"] . "</td>";
         echo "<td><a href='delete_theme.php?id=" . $row["id"] . "'>Delete</a></td>";
+        echo "<td><a class='edit' href='edit_theme.php?id=" . $row["id"] . "&label=" . $row["label"] . "'>Edit</a></td>";
         echo "</tr>";
     }
     echo "</table>";

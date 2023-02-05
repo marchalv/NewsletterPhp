@@ -29,12 +29,14 @@ $result = $conn->query($sql);
     echo "<th>ID</th>";
     echo "<th>Email</th>";
     echo "<th></th>";
+    echo "<th></th>";
     echo "</tr>";
     while ($row = $result->fetch_assoc()) {
         echo "<tr>";
         echo "<td>" . $row["id"] . "</td>";
         echo "<td>" . $row["email"] . "</td>";
         echo "<td><a href='delete_inscription.php?id=" . $row["id"] . "'>Delete</a></td>";
+        echo "<td><a class='edit' href='edit_inscription.php?id=" . $row["id"] . "&email=" . $row["email"] . "'>Edit</a></td>";
         echo "</tr>";
     }
     echo "</table>";

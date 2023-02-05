@@ -43,9 +43,14 @@ $themes_count = $result->fetch_row()[0];
 
 <br>
 
-<form class="button" action="logout.php">
-    <button type="submit">Log out</button>
-</form>
+<div class="container-row">
+    <form class="button" action="logout.php">
+        <button type="submit">Log out</button>
+    </form>
+    <form class="button" action="admin.php">
+        <button class="admin"type="submit">Add admin</button>
+    </form>
+</div>
 
 
 
